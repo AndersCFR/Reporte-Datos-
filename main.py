@@ -92,7 +92,7 @@ total_ci_validas = ci_validas + ci_validas_con_cero_agregado
 print('Total de cédulas válidas:  ', total_ci_validas)
 
 
-#Validación direcciones
+# Validación direcciones
 print('\n------Campo dirección de estudiantes------')
 for direccion in direcciones:
     if(type(direccion) != str):
@@ -100,7 +100,7 @@ for direccion in direcciones:
 print('Registros en los que no se registra dirección:  ', no_direccion)
 
 
-#Validación teléfono
+# Validación teléfono
 print('\n-----Campo teléfono de estudiantes-------')
 for telefono in telefonos:
     if(type(telefono) != str):
@@ -111,7 +111,7 @@ print('Registros sin teléfono:  ', no_telefono)
 print('Registros con número de teléfono no válido:   ', telefono_no_valido)
 
 
-#Validación de edad, import alg_edad
+# Validación de edad, import alg_edad
 print('\n-----Campo edad de estudiantes-------')
 
 edades_reales = []
@@ -124,7 +124,7 @@ for x in range(len(edades)):
 
 print('Registros con edades incorrectas:   ', edades_incorrectas)
 
-#Validación calificaciones
+# Validación calificaciones
 print('\n-----Campo calificaciones de estudiantes-------')
 for calificacion in calificaciones:
     if type(calificacion) == str:
@@ -151,7 +151,7 @@ print('Registros con nombres no válidos:   ',
       nombres_con_caracteres_no_validos)
 
 
-#VAlidacioón apellidos, import re
+# VAlidacioón apellidos, import re
 print('\n-----Campo apellido de estudiantes-------')
 patronapellido = re.compile(r"(?:(?:[a-zA-Z]+(?: ){1}(?:[a-zA-Z]+)))")
 for apellido in apellidos:
@@ -168,7 +168,7 @@ print('Registros con apellidos no válidos:   ',
       apellidos_con_caracteres_no_validos)
 
 
-#validación correo, import re
+# validación correo, import re
 print('\n-----Campo correo de estudiantes-------')
 patroncorreo = re.compile(
     r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
